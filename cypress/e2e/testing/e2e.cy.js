@@ -13,7 +13,7 @@
 
 describe("End to End Testing of the Streaming App", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000");
+    cy.visit("http://129.213.113.33/");
   });
 
   it("App name is Demo Streaming", () => {
@@ -42,45 +42,45 @@ describe("End to End Testing of the Streaming App", () => {
 
   it("Should navigate to Series", () => {
     cy.get(".card").eq(0).click();
-    cy.url().should("eq", "http://localhost:3000/popular/series");
+    cy.url().should("eq", "http://129.213.113.33/popular/series");
   });
 
   it("Should navigate to Movie", () => {
     cy.get(".card").eq(1).click();
-    cy.url().should("eq", "http://localhost:3000/popular/movie");
+    cy.url().should("eq", "http://129.213.113.33/popular/movie");
   });
 
   it("Visit an unknown path inside popular should result in No Results Found", () => {
-    cy.visit("http://localhost:3000/popular/abc");
+    cy.visit("http://129.213.113.33/popular/abc");
     cy.get(".no-results").should("have.text", "No Results");
   });
 
   it("Visit an unknown path other than popular should result 404 Error not Found", () => {
-    cy.visit("http://localhost:3000/abc");
+    cy.visit("http://129.213.113.33/abc");
     cy.get(".error-page span").should("have.text", ":( Error: 404 Not Found");
   });
 
   it("Visit an unknown path other than popular should result 404 Error not Found", () => {
-    cy.visit("http://localhost:3000/abc");
+    cy.visit("http://129.213.113.33/abc");
     cy.get(".error-page span").should("have.text", ":( Error: 404 Not Found");
   });
 
   it("Movies are displayed after navigating to movies list", () => {
     cy.get(".card").eq(1).click();
     cy.get(".items-list").eq(1).get(".card").should("have.length", 38);
-    cy.url().should("eq", "http://localhost:3000/popular/movie");
+    cy.url().should("eq", "http://129.213.113.33/popular/movie");
   });
 
   it("Series are displayed after navigating to series list", () => {
     cy.get(".card").eq(0).click();
     cy.get(".items-list").eq(1).get(".card").should("have.length", 66);
-    cy.url().should("eq", "http://localhost:3000/popular/series");
+    cy.url().should("eq", "http://129.213.113.33/popular/series");
   });
 
   it("Navigate to program details view", () => {
     cy.get(".card").eq(0).click();
     cy.get(".items-list").eq(1).get(".card").eq(3).click();
-    cy.url().should("eq", "http://localhost:3000/popular/series");
+    cy.url().should("eq", "http://129.213.113.33/popular/series");
   });
 
   it("Check if all the program details are displyed on the modal", () => {
@@ -104,15 +104,14 @@ describe("End to End Testing of the Streaming App", () => {
   });
 
   it("Clicking on App Name should navigate to home page", () => {
-    cy.visit("http://localhost:3000/abc");
+    cy.visit("http://129.213.113.33/abc");
     cy.get(".title a").click();
-    cy.url().should("eq", "http://localhost:3000/");
+    cy.url().should("eq", "http://129.213.113.33/");
   });
 
   it("Should show No fun facts on a fetch error", () => {
-    cy.visit("http://localhost:3000/popular/movie");
+    cy.visit("http://129.213.113.33/popular/movie");
     cy.get(".items-list").eq(1).children(".card").eq(1).click();
-    cy.get(".hero-funfact").should("have.text", "Fun Fact: Loading...");
     cy.wait(5000);
     cy.get(".hero-funfact").should("not.have.text", "Fun Fact: Loading...");
     cy.get(".hero-funfact").should(
@@ -122,7 +121,7 @@ describe("End to End Testing of the Streaming App", () => {
   });
 
   it("Should show loading on fun fact for the timout requests", () => {
-    cy.visit("http://localhost:3000/popular/movie");
+    cy.visit("http://129.213.113.33/popular/movie");
     cy.get(".items-list").eq(1).children(".card").eq(0).click();
     cy.get(".hero-funfact").should("have.text", "Fun Fact: Loading...");
     cy.wait(5000);
