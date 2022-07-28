@@ -1,3 +1,10 @@
+/***************************************************************
+Static Footer Component which doesn't depend on any state and remains 
+static through out.
+
+Author:	Satish Sarakanam
+***************************************************************/
+
 import React from "react";
 import playstore from "../images/playstore.png";
 import appstore from "../images/appstore.png";
@@ -19,6 +26,7 @@ export default function footer() {
         <a href="\">Manage Account</a>
       </section>
       <section className="copy-rights">
+        {/* Setting year using the Date Function, so don't need to visit later when the year changes */}
         <span className="cr">
           Copyright &#169; {new Date().getFullYear()} Demo Streaming. All Rights
           Reserved.

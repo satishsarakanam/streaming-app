@@ -1,3 +1,9 @@
+/***************************************************************
+Header component of the app
+
+Author:	Satish Sarakanam
+***************************************************************/
+
 import React, { Component } from "react";
 import "../styles/Header.css";
 import Menu from "@mui/icons-material/Menu";
@@ -5,13 +11,16 @@ import Menu from "@mui/icons-material/Menu";
 export default class Header extends Component {
   constructor(props) {
     super(props);
-    this.toggleDrawer = this.toggleDrawer.bind(this);
+
     this.state = {
       open: false,
     };
+
+    this.toggleDrawer = this.toggleDrawer.bind(this);
     this.windowResize = this.windowResize.bind(this);
   }
 
+  // Event handler for the hamburger menu
   toggleDrawer() {
     this.setState((prevState) => ({ open: !prevState.open }));
   }
@@ -24,6 +33,8 @@ export default class Header extends Component {
     }
   }
 
+  // Listener to the window resize to change the login/regigstartion
+  // link based on the screen size
   componentDidMount() {
     window.addEventListener("resize", this.windowResize);
   }
