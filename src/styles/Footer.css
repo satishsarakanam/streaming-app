@@ -3,16 +3,17 @@ footer {
     width: 100%;
     background: black;
     bottom: 0;
-    max-height: 12rem;
+    max-height: 13.33rem;
+    font-size: .75rem;
 }
 
 section.footer-links, section.copy-rights {
     text-align: left;
-    padding: 1rem 5rem;
+    padding: 0.67rem 3.33rem;
 }
 
 .footer-links a {
-    margin: 2rem 0.5rem;
+    margin: 1.33rem 0.33rem;
     color: gray;
     text-decoration: none;
 }
@@ -22,10 +23,10 @@ section.footer-links, section.copy-rights {
 }
 
 .footer-links a {
-    padding-right: 1rem;
+    padding-right: .67rem;
     color: gray;
     text-decoration: none;
-    border-right: 2px solid gray;
+    border-right: 1.33px solid gray;
 }
 
 .copy-rights {
@@ -39,12 +40,12 @@ section.footer-links, section.copy-rights {
 }
 
 .social-links a {
-    padding-right: 2rem;
+    padding-right: 1.33rem;
 }
 
 .social-links a svg {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     color: white;
 }
 
@@ -55,18 +56,18 @@ section.footer-img-links {
 
 .social-links,
 .appstore-links {
-    padding: 4rem 5rem;
-    padding-top: 1rem;
+    padding: 2.67rem 3.33rem;
+    padding-top: .67rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 section.footer-links {
-    padding-top: 2rem;
+    padding-top: 1.33rem;
 }
 
 .appstore-links img {
-    height: 4rem;
+    height: 2.67rem;
 }
 
 @media (max-width:1000px)  { 
@@ -74,6 +75,6 @@ section.footer-links {
         display: none !important;
     }
     .copy-rights {
-        padding-bottom: 3rem !important;
+        padding-bottom: 2rem !important;
     }
 }

@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 5rem);
     width: 100%;
     flex-flow: column;
 }
@@ -15,7 +15,7 @@
 
 .loading span {
     color: black;
-    font-size: 1rem;
+    font-size: .67rem;
 }
 
 .populars {
@@ -25,23 +25,23 @@
 .title-header {
     position: fixed;
     width: 100%;
-    top: 5rem;
+    top: 3.33rem;
     background: black;
     color: white;
-    padding: 0 5rem;
+    padding: 0 3.33rem;
     text-align: left;
-    height: 5rem;
+    height: 3.33rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .items-list {
     display: flex;
-    padding-left: 3rem;
+    padding-left: 2rem;
     flex-wrap: wrap;
-    margin-top: 12rem;
+    margin-top: 8rem;
 }
 
 .title-header span {
-    line-height: 5rem;
-    font-size: 1.6rem;
+    line-height: 3.33rem;
+    font-size: 1.067rem;
 }

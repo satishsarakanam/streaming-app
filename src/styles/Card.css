@@ -1,45 +1,45 @@
 span.card_title {
-    height: 2rem;
-    line-height: 2rem;
+    height: 2.67rem;
+    line-height: 1.33rem;
     text-align: left;
-    font-size: 1.25rem;
+    font-size: .83rem;
     text-transform: capitalize;
     color: black;
-    padding: 0.5rem 0.5rem;
+    padding: 0.33rem;
 }
 
 .card {
     display: flex;
     flex-flow: column;
-    margin: 2rem;
-    width: 13rem;
+    margin: 1.33rem;
+    width: 8.67rem;
     cursor: pointer;
 }
 
 span.card_title {
-    height: 2rem;
-    line-height: 2rem;
+    height: 1.33rem;
+    line-height: 1.33rem;
     text-align: left;
-    font-size: 1.25rem;
+    font-size: 0.83rem;
     text-transform: capitalize;
     color: black;
-    padding: 0.5rem 0.5rem;
+    padding: 0.33rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
 .card img {
-    width: 13rem;
-    height: 18rem;
+    width: 8.67rem;
+    height: 12rem;
 }
 
 span.no-results {
-    padding: 10rem;
-    font-size: 1.25rem;
+    padding: 6.67rem;
+    font-size: 0.83rem;
     color: black;
 }
 
 .card:last-child {
-    margin-bottom: 20rem;
+    margin-bottom: 13.33rem;
 }

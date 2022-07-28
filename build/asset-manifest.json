@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ab3dfb0.css",
-    "main.js": "/static/js/main.dea01e62.js",
+    "main.css": "/static/css/main.1a929c8e.css",
+    "main.js": "/static/js/main.6e9c4ac9.js",
     "static/media/windowstore.png": "/static/media/windowstore.4defb0bdf8d0580e657e.png",
     "static/media/playstore.png": "/static/media/playstore.f902960a94878ee0da67.png",
     "index.html": "/index.html",
-    "main.2ab3dfb0.css.map": "/static/css/main.2ab3dfb0.css.map",
-    "main.dea01e62.js.map": "/static/js/main.dea01e62.js.map"
+    "main.1a929c8e.css.map": "/static/css/main.1a929c8e.css.map",
+    "main.6e9c4ac9.js.map": "/static/js/main.6e9c4ac9.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ab3dfb0.css",
-    "static/js/main.dea01e62.js"
+    "static/css/main.1a929c8e.css",
+    "static/js/main.6e9c4ac9.js"
   ]
 }

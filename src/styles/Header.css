@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     background-color: #007dfd;
-    height: 5rem;
+    height: 3.33rem;
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
@@ -14,9 +14,9 @@
 }
 
 .header span {
-    line-height: 5rem;
-    padding: 0 1rem;
-    font-size: 1.7rem;
+    line-height: 3.33rem;
+    padding: 0 .67rem;
+    font-size: 1.13rem;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -29,18 +29,18 @@
 }
 
 .header section {
-    margin: 0 4rem;
+    margin: 0 2.67rem;
 }
 
 .onboard span {
-    font-size: 1rem;
+    font-size: .67rem;
 }
 
 .onboard .signup {
-    border: 1px solid black;
-    padding: 0.5rem;
+    border: .67px solid black;
+    padding: .33rem;
     background: black;
-    border-radius: 5px;
+    border-radius: 3.33px;
 }
 
 .hamburg ~ span {
@@ -65,12 +65,12 @@
 .onboard.open .hamburg ~ span {
     display: block;
     background: #007dfdde;
-    height: 2rem;
-    padding: 1rem 0.5rem;
-    line-height: 2rem;
+    height: 1.33rem;
+    padding: .67rem .33rem;
+    line-height: 1.33rem;
     border: 0;
     border-radius: 0;
-    border-top: 1px solid;
+    border-top: .67px solid;
 }
 
 .title a {

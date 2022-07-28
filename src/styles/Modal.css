@@ -10,33 +10,34 @@ section.modal-window {
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
+    background: #00000082;
 }
 
 .program-details {
     width: 80%;
-    max-width: 40rem;
+    max-width: 26.67rem;
     display: flex;
     flex-flow: column;
     background: #000000e3;
-    border: 2px solid #1a76d2;
-    border-radius: 8px;
+    border: 1.33px solid #1a76d2;
+    border-radius: 5.33px;
 }
 
 .program-details img {
-    width: 16rem;
-    height: 20rem;
+    width: 10.67rem;
+    height: 13.33rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: .67rem;
 }
 
 span.hero-title {
-    height: 4rem;
-    line-height: 4rem;
-    border: 3px solid #1a76d2;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    border: 2px solid #1a76d2;
     border-left: none;
     border-right: none;
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    font-size: 1rem;
+    margin: .67rem 0;
 }
 
 .modal-window span {
@@ -45,11 +46,15 @@ span.hero-title {
 
 span.hero-description, span.hero-year, span.hero-funfact {
     text-align: left;
-    padding: 1rem;
-    font-size: 1.25rem;
+    padding: .67em;
+    font-size: 0.817rem;
 }
 
 .program-details button {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+span.hero-funfact {
+    padding-bottom: 1rem;
 }

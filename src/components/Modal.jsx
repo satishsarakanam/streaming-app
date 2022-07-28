@@ -33,7 +33,7 @@ export default class Modal extends Component {
           <span className="hero-description">{description}</span>
           <span className="hero-year">{`Release year: ${releaseYear}`}</span>
           <span className="hero-funfact">{`Fun Fact: ${funcFact}`}</span>
-          <Button onClick={closePopup} variant="contained" size="large">
+          <Button onClick={closePopup} variant="contained" size="small">
             Close
           </Button>
         </div>
