@@ -108,4 +108,24 @@ describe("End to End Testing of the Streaming App", () => {
     cy.get(".title a").click();
     cy.url().should("eq", "http://localhost:3000/");
   });
+
+  it("Should show No fun facts on a fetch error", () => {
+    cy.visit("http://localhost:3000/popular/movie");
+    cy.get(".items-list").eq(1).children(".card").eq(1).click();
+    cy.get(".hero-funfact").should("have.text", "Fun Fact: Loading...");
+    cy.wait(5000);
+    cy.get(".hero-funfact").should("not.have.text", "Fun Fact: Loading...");
+    cy.get(".hero-funfact").should(
+      "have.text",
+      "Fun Fact: Oh no! Nothing Found"
+    );
+  });
+
+  it("Should show loading on fun fact for the timout requests", () => {
+    cy.visit("http://localhost:3000/popular/movie");
+    cy.get(".items-list").eq(1).children(".card").eq(0).click();
+    cy.get(".hero-funfact").should("have.text", "Fun Fact: Loading...");
+    cy.wait(5000);
+    cy.get(".hero-funfact").should("not.have.text", "Fun Fact: Loading...");
+  });
 });
