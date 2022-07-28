@@ -34,7 +34,6 @@ export default class Popular extends Component {
 
   render() {
     const { populars } = this.state;
-    console.log(populars);
     return (
       <div className="main">
         {this.state.loading ? (
