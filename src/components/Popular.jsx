@@ -1,3 +1,13 @@
+/***************************************************************
+Popular Component which shows the popular items
+
+Has loading and popular state values and depending on when the data is received and parsed, loading is shown.
+
+Uses React Route to easily route to populars
+
+Author:	Satish Sarakanam
+***************************************************************/
+
 import React, { Component } from "react";
 import movies from "../json/movies.json";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
@@ -10,6 +20,7 @@ export default class Popular extends Component {
   constructor(props) {
     super(props);
 
+    // Initializing the loading as true, so loading is rendered intially
     this.state = {
       loading: true,
       populars: {},
@@ -17,19 +28,19 @@ export default class Popular extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      let populars = {};
-      for (var item of movies.entries) {
-        if (!populars[item.programType]) {
-          populars[item.programType] = [];
-        }
-        populars[item.programType].push(item);
+    let populars = {};
+    for (var item of movies.entries) {
+      if (!populars[item.programType]) {
+        populars[item.programType] = [];
       }
-      this.setState({
-        populars,
-        loading: false,
-      });
-    }, 0);
+      populars[item.programType].push(item);
+    }
+
+    // Set the state when the component is loaded and the data is parsed
+    this.setState({
+      populars,
+      loading: false,
+    });
   }
 
   render() {
@@ -55,11 +66,13 @@ export default class Popular extends Component {
               })}
             </div>
             <Switch>
+              {/* When matched the exact path, render popular list */}
               <Route
                 exact
                 path="/popular/:name"
                 render={() => <PopularList populars={populars} />}
               ></Route>
+              {/* On other routes display the Error Component */}
               <Route path="/:path" render={() => <Error />}></Route>
             </Switch>
           </BrowserRouter>
