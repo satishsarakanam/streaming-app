@@ -1,0 +1,79 @@
+footer {
+    position: fixed;
+    width: 100%;
+    background: black;
+    bottom: 0;
+    max-height: 12rem;
+}
+
+section.footer-links, section.copy-rights {
+    text-align: left;
+    padding: 1rem 5rem;
+}
+
+.footer-links a {
+    margin: 2rem 0.5rem;
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-links a:last-child {
+    border: none;
+}
+
+.footer-links a {
+    padding-right: 1rem;
+    color: gray;
+    text-decoration: none;
+    border-right: 2px solid gray;
+}
+
+.copy-rights {
+    text-align: left;
+    color: gray;
+    padding-top: 0rem !important;
+}
+
+.footer-links a:first-child {
+    margin-left: 0;
+}
+
+.social-links a {
+    padding-right: 2rem;
+}
+
+.social-links a svg {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+}
+
+section.footer-img-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links,
+.appstore-links {
+    padding: 4rem 5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.footer-links {
+    padding-top: 2rem;
+}
+
+.appstore-links img {
+    height: 4rem;
+}
+
+@media (max-width:1000px)  { 
+    .footer-img-links {
+        display: none !important;
+    }
+    .copy-rights {
+        padding-bottom: 3rem !important;
+    }
+}

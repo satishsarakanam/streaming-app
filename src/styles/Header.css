@@ -1,0 +1,89 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #007dfd;
+    height: 5rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;  
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 10;
+}
+
+.header span {
+    line-height: 5rem;
+    padding: 0 1rem;
+    font-size: 1.7rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburg svg {
+    cursor: pointer;
+}
+
+.header section {
+    margin: 0 4rem;
+}
+
+.onboard span {
+    font-size: 1rem;
+}
+
+.onboard .signup {
+    border: 1px solid black;
+    padding: 0.5rem;
+    background: black;
+    border-radius: 5px;
+}
+
+.hamburg ~ span {
+    display: none;     
+}
+
+.hamburg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.onboard.open {
+    flex-flow: column;
+}
+
+.onboard.open .hamburg ~ span {
+    display: block !important;
+}
+
+.onboard.open .hamburg ~ span {
+    display: block;
+    background: #007dfdde;
+    height: 2rem;
+    padding: 1rem 0.5rem;
+    line-height: 2rem;
+    border: 0;
+    border-radius: 0;
+    border-top: 1px solid;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+
+@media (min-width:800px)  { 
+    .onboard .hamburg {
+        display: none;
+    }
+    .hamburg ~ span {
+        display: inline;     
+    }
+}
+    

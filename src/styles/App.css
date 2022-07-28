@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  color: blue;
+  font-family: Verdana, sans-serif;
+}
+
+body.route .populars,
+body.route .popular-title {
+  display: none;
+}
+
+body.modal {
+  overflow: hidden;
+}
+
+body.route .items-list {
+  margin-top: 6rem;
+}

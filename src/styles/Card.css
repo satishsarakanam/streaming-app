@@ -1,0 +1,45 @@
+span.card_title {
+    height: 2rem;
+    line-height: 2rem;
+    text-align: left;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: black;
+    padding: 0.5rem 0.5rem;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    margin: 2rem;
+    width: 13rem;
+    cursor: pointer;
+}
+
+span.card_title {
+    height: 2rem;
+    line-height: 2rem;
+    text-align: left;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: black;
+    padding: 0.5rem 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card img {
+    width: 13rem;
+    height: 18rem;
+}
+
+span.no-results {
+    padding: 10rem;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.card:last-child {
+    margin-bottom: 20rem;
+}
