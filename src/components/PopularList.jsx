@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import Card from "./Card";
 import Modal from "./Modal";
 
-let DEFAULT_TIMER = 0;
-
 export default function PopularList(props) {
   const { name } = useParams();
   const { populars } = props;
@@ -22,6 +20,7 @@ export default function PopularList(props) {
     programDetails.funcFact = "Loading...";
     setProgramDetails(programDetails);
 
+    let DEFAULT_TIMER = 0;
     let numbersapiUrl = `http://numbersapi.com/${programDetails.releaseYear}/year`;
     if (programDetails.title === "U2: Live in Paris") {
       DEFAULT_TIMER = 3000;
