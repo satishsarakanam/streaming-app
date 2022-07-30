@@ -12,8 +12,9 @@ span.card_title {
     display: flex;
     flex-flow: column;
     margin: 1.33rem;
-    width: 8.67rem;
+    width: 8.85rem;
     cursor: pointer;
+    height: 14rem;
 }
 
 span.card_title {
@@ -42,4 +43,14 @@ span.no-results {
 
 .card:last-child {
     margin-bottom: 13.33rem;
+}
+
+.populars .card:last-child {
+    margin-bottom: 0rem;
+}
+
+@media (max-width:400px)  { 
+    .populars:last-child .card:last-child {
+        margin-bottom: 13.33rem;
+    }
 }
