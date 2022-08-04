@@ -1,6 +1,11 @@
 # Simple Streaming App in ReactJS
 
 This is a simple Streaming App which lists all the popular movies and series done entirely on react and tested using cypress
+
+# Demo
+
+http://129.213.113.33/
+
 ## Available Scripts
 
 In the project directory, you can run:
